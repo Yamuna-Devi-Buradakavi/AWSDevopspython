@@ -1,0 +1,14 @@
+def isspy(n):
+    res=1
+    sum=0
+
+    while(n>0):    
+       rem=n%10
+       sum=sum+rem
+       res=res*rem
+       n=n//10
+    return sum==res
+t=int(input())
+for i in range(t):
+    n=int(input())
+    print(isspy(n))
