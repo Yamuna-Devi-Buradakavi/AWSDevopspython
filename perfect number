@@ -9,3 +9,21 @@ def perfect(n):
         print('not perfect')
 n=int(input())
 perfect(n)
+
+
+import math as m
+def perfect(n):
+    sum=1
+##    i=2
+##    sq=int(m.sqrt(n))
+##    for i in range (2,sq+1):
+##        if n%i==0:
+##            sum+=i
+##            sum+=n//i
+##    return sum==n
+##t=int(input())
+##for i in range(t):
+##    n=int(input())
+##    print(perfect(n))
+    
+        
