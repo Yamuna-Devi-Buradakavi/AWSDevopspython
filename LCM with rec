@@ -1,0 +1,38 @@
+def lcm(a,b):
+    global t
+    t=2
+    s=1
+    while(a>t and b>t):
+        if (a%t==0 and b%t==0):
+             a=a//t
+             b=b//t
+             s*=t
+        else:
+            t+=1
+    return s*a*b
+       
+    
+a,b=map(int,input().split())
+res=lcm(a,b)
+print(res)
+
+
+def lcm(a,b):
+    global t
+    res=1
+    if(a<t or b<t):
+        return a*b
+    if (a%t==0 and b%t==0):
+             a=a//t
+             b=b//t
+             res=t
+             return t*lcm(a,b)
+    else:
+        t+=1
+        return lcm(a,b)
+       
+    
+a,b=map(int,input().split())
+t=2
+rek=lcm(a,b)
+print(rek)
