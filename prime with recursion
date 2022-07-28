@@ -1,0 +1,14 @@
+import math
+i=2
+num=int(input())
+sq=int(math.sqrt(num))
+def prim(num):
+    global i
+    if i>sq:
+        return True
+    if num%i==0:
+        return False
+    else:
+        i+=1
+    return prim(num)
+print(prim(num))
